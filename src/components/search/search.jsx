@@ -7,7 +7,7 @@ import { GEO_API_URL, geoApiOptions } from "../../api/api";
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
   
-  // call handleOnchange > pass data > setting new value > call onSearchChange which is passed from app.js
+  // call handleOnchange then pass searchdata  then set new value then call onSearchChange which is passed from app.js
   const handleOnChange = (searchDate) => {
     setSearch(searchDate); // update search
     onSearchChange(searchDate); // pass data that we got from input
