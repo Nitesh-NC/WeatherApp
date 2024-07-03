@@ -44,7 +44,7 @@ function App() {
           <Weather data={currentWeather}/> // send weather data that is fetched form api to child component 
         }
         {forecast && 
-          <Forecast data={forecast}/>
+          <Forecast data={forecast}/> // send forecast data that is fetched from api to child component
         }
       </div>
     </>
